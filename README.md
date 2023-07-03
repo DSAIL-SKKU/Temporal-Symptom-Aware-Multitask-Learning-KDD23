@@ -3,15 +3,15 @@ This codebase contains the python scripts for the model for the KDD 2023 paper l
 
 ## Environment & Installation Steps
 Python 3.8 & Pytorch 1.12
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 ## Run
 Execute the following steps in the same environment:
-'''
+```
 cd Temporal-Symptom-Aware-Multitask-Learning-KDD23 & python KDD_main.py
-'''
+```
 
 ## Dataset Format
 Processed dataset format should be a DataFrame as a .pkl file having the following columns:
@@ -24,7 +24,7 @@ Processed dataset format should be a DataFrame as a .pkl file having the followi
 ## Annotation Process
 To label the collected Reddit dataset, we recruited four researchers, who are knowledgeable in psychology and fluent in English, as annotators. With the supervision of a psychiatrist, the four trained annotators labeled 818 users and their 7,592 anonymized Reddit posts using the open-source text annotation tool Doccano. During annotations, we mainly consider two different label categories: (i) BD symptoms (e.g., manic, anxiety) and (ii) suicidality levels (e.g., ideation, attempt). We further annotate the diagnosed BD type (e.g., BD-I, BD-II) for data analysis. If there is any conflict in the annotated labels across the annotators, all the annotators discuss and reach to an agreement under the supervision of the psychiatrists. 
 
-<img src = "img/dataset.png" width="250">
+<img src = "img/dataset.png" width="400">
 
 ## Ethical Concerns
 We carefully consider potential ethical issues in this work: (i) protecting users' privacies on Reddit and (ii) avoiding potentially harmful uses of the proposed dataset. The Reddit privacy policy explicitly authorizes third parties to copy user content through the Reddit API. We follow the widely-accepted social media research ethics policies that allow researchers to utilize user data without explicit consent if anonymity is protected (benton et al. 2017; Williams et al., 2017). Any metadata that could be used to specify the author was not collected. In addition, all content is manually scanned to remove personally identifiable information and mask all the named entities. More importantly, the BD dataset will be shared only with other researchers who have agreed to the ethical use of the dataset. This study was reviewed and approved by the Institutional Review Board (SKKU2022-11-038).
