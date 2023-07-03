@@ -1,0 +1,6 @@
+pytorch-lightning==1.7.0
+torch==1.12.1+cu113
+tqdm==4.65.0
+transformers==4.29.2
+typing-extensions==4.6.3
+urllib3==1.24
