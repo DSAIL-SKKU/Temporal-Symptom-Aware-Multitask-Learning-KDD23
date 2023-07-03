@@ -1,10 +1,12 @@
 ## Abstract
 Bipolar disorder (BD) is closely associated with an increased risk of suicide. However, while the prior work has revealed valuable insight into understanding the behavior of BD patients on social media, little attention has been paid to developing a model that can predict the future suicidality of a BD patient. This study proposes a multi-task learning model for predicting the future suicidality of BD patients by jointly learning current symptoms. We build a novel BD dataset clinically validated by psychiatrists, including 14 years of posts on bipolar-related subreddits by 818 BD patients, along with the annotations of future suicidality and BD symptoms. We also suggest a multi-task learning model that applies a temporal symptom-aware attention mechanism to determine which symptoms are the most influential for predicting future suicidality over time through a sequence of BD posts. The proposed model outperforms the state-of-the-art models in both BD symptom identification and future suicidality prediction tasks. Additionally, the proposed temporal symptom-aware attention provides interpretable attention weights, helping clinicians to apprehend BD patients more comprehensively and to provide timely intervention by tracking mental state progression. 
-![](https://lh5.googleusercontent.com/qGH3ow3-dv-GhN1GEJ4CU59EfnfNI9xCSI5vyaU8SvoHEL5-xKXL-9YC2iFqGDJFTUCurqRROIJ8lUFEbLcc_OnKBbDkwypcerQXagaV0U0onfUY74QNfRVwSAtukYA0OQ=w1280)
+
+<img src = "img/framwork.png">
 
 ## Annotation Process
 To label the collected Reddit dataset, we recruited four researchers, who are knowledgeable in psychology and fluent in English, as annotators. With the supervision of a psychiatrist, the four trained annotators labeled 818 users and their 7,592 anonymized Reddit posts using the open-source text annotation tool Doccano. During annotations, we mainly consider two different label categories: (i) BD symptoms (e.g., manic, anxiety) and (ii) suicidality levels (e.g., ideation, attempt). We further annotate the diagnosed BD type (e.g., BD-I, BD-II) for data analysis. If there is any conflict in the annotated labels across the annotators, all the annotators discuss and reach to an agreement under the supervision of the psychiatrists. 
-![](https://lh4.googleusercontent.com/P5sjfdhX1NtGY5bzTk4jFCs3nHnA00C236URgrN3JWTg-uhRGtLhuY5yVnYBzS34qlhM1sd3cQ_U2NZTs3_9658twhppFsouQ-Q_xhYJGXJHpMHImjw3Cc_wbX0iS6wm1Q=w1280)
+
+<img src = "img/dataset.png">
 
 ## Ethical Concerns
 We carefully consider potential ethical issues in this work: (i) protecting users' privacies on Reddit and (ii) avoiding potentially harmful uses of the proposed dataset. The Reddit privacy policy explicitly authorizes third parties to copy user content through the Reddit API. We follow the widely-accepted social media research ethics policies that allow researchers to utilize user data without explicit consent if anonymity is protected (benton et al. 2017; Williams et al., 2017). Any metadata that could be used to specify the author was not collected. In addition, all content is manually scanned to remove personally identifiable information and mask all the named entities. More importantly, the BD dataset will be shared only with other researchers who have agreed to the ethical use of the dataset. This study was reviewed and approved by the Institutional Review Board (SKKU2022-11-038).
@@ -34,5 +36,19 @@ Due to limitations in the number of available individuals, three out of the five
 
 The authors will prioritize and promote diversity and inclusivity among the reviewers and the community of researchers utilizing the dataset.
 
-Reference
+__Reference__
 Zirikly, A., Resnik, P., Uzuner, O., & Hollingshead, K. (2019, June). CLPsych 2019 shared task: Predicting the degree of suicide risk in Reddit posts. In Proceedings of the sixth workshop on computational linguistics and clinical psychology (pp. 24-33)# Temporal-Symptom-Aware-Multitask-Learning-KDD23
+
+---
+### If our work was helpful in your research, please kindly cite this work:
+
+```
+BIBTEX
+will be updated
+```
+
+### Acknowledgments
+This research was supported by the Ministry of Education of the Republic of Korea and the National Research Foundation of Korea (NRF-2022S1A5A8054322) and the National Research Foundation of Korea (NRF) grant funded by the Korea government (MSIT) (No. 2023R1A2C2007625). 
+
+### Our Lab Site
+[Data Science & Artificial Intelligence Laboratory (DSAIL) @ Sungkyunkwan University](https://sites.google.com/view/datasciencelab/home)
