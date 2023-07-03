@@ -1,0 +1,6 @@
+,precision,recall,f1-score,support
+su_indicator,1.0,0.5,0.6666666666666666,2.0
+su_id+beh+att,0.0,1.0,0.0,0.0
+accuracy,0.5,0.5,0.5,0.5
+macro avg,0.5,0.75,0.3333333333333333,2.0
+weighted avg,1.0,0.5,0.6666666666666666,2.0
