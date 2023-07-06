@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Run
 Execute the following steps in the same environment:
 ```
-cd Temporal-Symptom-Aware-Multitask-Learning-KDD23 & python KDD_main.py
+cd Temporal-Symptom-Aware-Multitask-Learning-KDD23 & python main.py
 ```
 
 ## Dataset Format
