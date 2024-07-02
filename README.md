@@ -59,8 +59,13 @@ Zirikly, A., Resnik, P., Uzuner, O., & Hollingshead, K. (2019, June). CLPsych 20
 ### If our work was helpful in your research, please kindly cite this work:
 
 ```
-BIBTEX
-will be updated
+@inproceedings{lee2023towards,
+  title={Towards Suicide Prevention from Bipolar Disorder with Temporal Symptom-Aware Multitask Learning},
+  author={Lee, Daeun and Son, Sejung and Jeon, Hyolim and Kim, Seungbae and Han, Jinyoung},
+  booktitle={Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={4357--4369},
+  year={2023}
+}
 ```
 
 ### Acknowledgments
